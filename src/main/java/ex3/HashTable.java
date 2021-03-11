@@ -58,6 +58,7 @@ public class HashTable {
         if(entries[hash] != null) {
             HashEntry temp = getHashEntry(key, entries[hash]);
 
+            //temp.value
             return String.valueOf(temp.value);
         }
 
@@ -99,6 +100,8 @@ public class HashTable {
     }
 
     private class HashEntry {
+        //String key;
+        //String value;
         Object key;
         Object value;
 
